@@ -1,2 +1,2 @@
-# android_uikit
-android common widget view
+# android_sample_uikit
+android sample of widget view
