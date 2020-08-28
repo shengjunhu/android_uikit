@@ -9,13 +9,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".seekbar.SeekBarActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/activity_seek_bar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".transition.Transition1Activity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/activity_transition"
+            android:theme="@style/FullScreenTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".transition.Transition2Activity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/activity_transition"
+            android:theme="@style/TransparentVideoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
     </application>
 
 </manifest>

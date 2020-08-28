@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".seekbar.SeekBarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.hsj.widget.seekbar.SeekBars
+            android:id="@+id/sb_1"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="15dp"
+            app:sb_max="100"
+            app:sb_min="0"
+            app:sb_progress="50" />
+
+        <com.hsj.widget.seekbar.SeekBars
+            android:id="@+id/sb_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="15dp"
+            app:sb_progress="50"
+            app:sb_second_track_color="@color/colorPink"
+            app:sb_show_section_mark="true"
+            app:sb_track_color="@color/color9" />
+
+        <com.hsj.widget.seekbar.SeekBars
+            android:id="@+id/sb_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="15dp"
+            app:sb_auto_adjust_section_mark="true"
+            app:sb_max="10"
+            app:sb_rtl="true"
+            app:sb_second_track_color="@color/colorRed"
+            app:sb_section_count="10"
+            app:sb_section_text_position="below_section_mark"
+            app:sb_show_section_mark="true"
+            app:sb_show_section_text="true"
+            app:sb_show_thumb_text="true"
+            app:sb_touch_to_seek="true" />
+
+        <com.hsj.widget.seekbar.SeekBars
+            android:id="@+id/sb_4"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="15dp"
+            app:sb_always_show_bar="true"
+            app:sb_auto_adjust_section_mark="true"
+            app:sb_second_track_color="@color/colorPink"
+            app:sb_section_count="5"
+            app:sb_section_text_position="below_section_mark"
+            app:sb_show_section_mark="true"
+            app:sb_show_section_text="true"
+            app:sb_show_thumb_text="true"
+            app:sb_touch_to_seek="true"
+            app:sb_track_color="@color/colorPink2" />
+
+        <com.hsj.widget.seekbar.SeekBars
+            android:id="@+id/sb_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="15dp"
+            app:sb_progress="30"
+            app:sb_second_track_color="@color/colorBlue"
+            app:sb_section_count="10"
+            app:sb_section_text_position="below_section_mark"
+            app:sb_touch_to_seek="true" />
+
+    </LinearLayout>
+
+</ScrollView>

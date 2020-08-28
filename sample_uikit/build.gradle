@@ -50,6 +50,17 @@ android {
         }
     }
 
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layout/transition',
+                    'src/main/res/layout/seekbar',
+                    'src/main/res/layout',
+                    'src/main/res',
+            ]
+        }
+    }
+
 }
 
 repositories {

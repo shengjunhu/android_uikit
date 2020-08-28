@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">android_sample_uikit</string>
+    <string name="activity_seek_bar">SeekBars</string>
+    <string name="activity_transition">Transition</string>
 </resources>
