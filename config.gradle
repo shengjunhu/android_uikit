@@ -5,9 +5,7 @@ static def buildTime() {
 ext {
 
     plugins = [
-            //库
             library                     : 'com.android.library',
-            //应用
             application                 : 'com.android.application',
     ]
 
